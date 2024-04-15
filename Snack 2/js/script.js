@@ -16,3 +16,16 @@ squadre.forEach(squadra => {
     // console.log(`Falli subiti da ${squadra.nome}: ${squadra.falliSubiti}`);
 });
 
+
+const risultatiFalli = squadre.map(function(squadra) {
+    const nome = squadra.nome;
+    const falliSubiti = squadra.falliSubiti;
+
+    return {
+        nome: nome,
+        falliSubiti: falliSubiti
+    };
+});
+
+// Stampa dei risultati
+console.log(risultatiFalli);
